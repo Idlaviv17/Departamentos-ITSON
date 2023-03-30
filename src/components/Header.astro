@@ -1,0 +1,45 @@
+<header>
+  <img class='logo' src='/public/logo.png' alt='Logo' />
+  <nav>
+    <ul>
+      <li><a href='/'>Inicio</a></li>
+      <li><a href='/gallery/'>Galería</a></li>
+      <li><a href='/contact/'>Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcd703;
+    padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.3em;
+  }
+
+  nav li:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  nav li:hover {
+    font-weight: bold;
+  }
+
+  .logo {
+    height: 100px;
+    width: auto;
+  }
+</style>

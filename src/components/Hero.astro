@@ -1,0 +1,44 @@
+<section class='hero'>
+  <h2>Ofrecemos de los mejores departamentos para estudiantes</h2>
+  <a href='/contact/'><button type='submit'>Contáctanos</button></a>
+</section>
+
+<style>
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    background-image: url('/public/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero form {
+    display: flex;
+  }
+
+  .hero input[type='text'] {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .hero button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #fcd703;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>

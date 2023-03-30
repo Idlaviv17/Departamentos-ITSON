@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Departamentos ITSON'>
+  <main>
+    <div class='gallery'>
+      <div class='gallery-item'>
+        <img src='/public/bano.jpeg' alt='Baño' />
+        <div class='overlay'>
+          <div class='text'>Baño</div>
+        </div>
+      </div>
+      <div class='gallery-item'>
+        <img src='/public/cocina.jpeg' alt='Cocina' />
+        <div class='overlay'>
+          <div class='text'>Cocina</div>
+        </div>
+      </div>
+      <div class='gallery-item'>
+        <img src='/public/entrada.jpeg' alt='Entrada' />
+        <div class='overlay'>
+          <div class='text'>Entrada</div>
+        </div>
+      </div>
+      <div class='gallery-item'>
+        <img src='/public/recamara1.jpeg' alt='Recamara1' />
+        <div class='overlay'>
+          <div class='text'>Recámara</div>
+        </div>
+      </div>
+      <div class='gallery-item'>
+        <img src='/public/recamara2.jpeg' alt='Recamara2' />
+        <div class='overlay'>
+          <div class='text'>Recámara</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px;
+  }
+
+  .gallery-item {
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .gallery img {
+    width: 500px;
+    height: auto;
+  }
+</style>

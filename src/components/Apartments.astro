@@ -1,0 +1,83 @@
+<section class='apartments'>
+  <h2>Nuestros Departamentos</h2>
+  <div class='apartment'>
+    <i class='fa-solid fa-dice-two'></i>
+    <h3>Para dos personas</h3>
+    <p>
+      Amplio departamento de una recámara ideal para dos personas, con todas las amenidades.
+    </p>
+  </div>
+  <div class='apartment'>
+    <i class='fa-sharp fa-solid fa-users'></i>
+    <h3>Para tres personas</h3>
+    <p>
+      Departamento de una recámara grande para tres personas, con pasillo y cocina amplios.
+    </p>
+  </div>
+</section>
+
+<style>
+  .apartments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #fff;
+    color: #070024;
+  }
+
+  .apartment {
+    width: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .apartment img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .apartment h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .apartment p {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .apartment button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 5em;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 991px) {
+    section {
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+    }
+
+    h2 {
+      margin-left: 35%;
+    }
+
+    .apartment {
+      margin-left: 35%;
+    }
+  }
+</style>
